@@ -1,16 +1,16 @@
-import React from 'react';
+import React from "react";
 import about1 from "../assets/about1.png";
 import about2 from "../assets/about2.png";
 import {
-  FaVideo,
-  FaChartLine,
-  FaEnvelope,
-  FaInbox,
-  FaList,
-  FaMap,
-  FaMapMarkedAlt,
-  FaUser,
-} from 'react-icons/fa';
+  FaLeaf,
+  FaShieldAlt,
+  FaTruck,
+  FaPhone,
+  FaCheckCircle,
+  FaStar,
+  FaHandshake,
+  FaGlobe,
+} from "react-icons/fa";
 
 const About = () => {
   return (
@@ -20,42 +20,65 @@ const About = () => {
         {/* IMAGE - LEFT SIDE */}
         <div className="flex-1">
           <div className="relative">
-            <img src={about1} alt="Speelix Agent Showing Property" className="rounded-3xl" />
+            <img
+              src={about1}
+              alt="IROHBEST Farm Processing"
+              className="rounded-3xl"
+            />
             <span className="absolute top-8 left-8 bg-white px-3 py-1 rounded-full medium-14 shadow">
-              Lekki Phase 1
+              Abia State
             </span>
           </div>
         </div>
 
         {/* INFO - RIGHT SIDE */}
         <div className="flex-1">
-          <h2 className="h2">Empowering You to Find Your Ideal Home—Without the Stress</h2>
+          <h2 className="h2">
+            From Farm to Table—Premium Cassava Products You Can Trust
+          </h2>
           <p className="mt-3 text-muted">
-            At <strong>SPEELIX IDEAL HOME (NIG) LTD</strong>, we turn complex real estate decisions into simple,
-            confident moves. Whether you’re buying, selling, leasing, or hosting a short-let, our verified listings,
-            transparent fees, and hands-on support keep you informed at every step.
+            At <strong>IROHBEST Mill & Farm Ltd</strong>, we cultivate quality
+            cassava using sustainable farming practices, process it with
+            hygienic standards, and deliver premium garri, cassava flour, and
+            fufu flour directly to your wholesale business. Bulk orders,
+            guaranteed freshness, WhatsApp convenience.
           </p>
 
           <div className="flex flex-col gap-6 mt-5">
             <div className="flex gap-3 items-start">
-              <FaVideo className="text-secondary mt-1" />
-              <p>Virtual tours & live video viewings—see every detail before you commit.</p>
+              <FaLeaf className="text-green-600 mt-1" />
+              <p>
+                Farm-to-Mill processing—from harvest to packaging in our
+                facility.
+              </p>
             </div>
             <div className="flex gap-3 items-start">
-              <FaChartLine className="text-secondary mt-1" />
-              <p>Real-time market insights to guide pricing, offers, and negotiations.</p>
+              <FaShieldAlt className="text-green-600 mt-1" />
+              <p>
+                Hygienic production standards with quality control at every
+                stage.
+              </p>
             </div>
             <div className="flex gap-3 items-start">
-              <FaMap className="text-secondary mt-1" />
-              <p>Interactive maps & area guidance—schools, security, traffic, and utilities.</p>
+              <FaTruck className="text-green-600 mt-1" />
+              <p>
+                Bulk supply capability—wholesale rates for retailers and
+                distributors.
+              </p>
             </div>
             <div className="flex gap-3 items-start">
-              <FaMapMarkedAlt className="text-secondary mt-1" />
-              <p>Early access to select off-market and exclusive listings.</p>
+              <FaPhone className="text-green-600 mt-1" />
+              <p>
+                Quick WhatsApp ordering—place bulk orders and get instant
+                replies.
+              </p>
             </div>
             <div className="flex gap-3 items-start">
-              <FaEnvelope className="text-secondary mt-1" />
-              <p>Direct messaging with agents & owners for fast, transparent communication.</p>
+              <FaCheckCircle className="text-green-600 mt-1" />
+              <p>
+                Consistent quality—each batch tested for moisture, purity, and
+                grade.
+              </p>
             </div>
           </div>
         </div>
@@ -65,32 +88,45 @@ const About = () => {
       <div className="flex items-center flex-col lg:flex-row gap-12 mt-36">
         {/* INFO - LEFT SIDE */}
         <div className="flex-1">
-          <h2 className="h2">Simplifying Your Real Estate Journey—From Enquiry to Keys-in-Hand</h2>
+          <h2 className="h2">
+            Why Businesses Choose IROHBEST for Cassava Products
+          </h2>
           <p className="mt-3 text-muted">
-            We combine neighborhood expertise with clean documentation and timely updates. Schedule inspections,
-            compare options, and close with confidence—no hidden charges, no last-minute surprises.
+            Whether you run a food business, restaurant, or distribute
+            agricultural products, IROHBEST offers reliable partnerships.
+            Transparent pricing, flexible bulk orders, and direct farm access
+            mean you get the best value for your business.
           </p>
 
           <div className="flex flex-col gap-6 mt-5">
             <div className="flex gap-3 items-start">
-              <FaList className="text-secondary mt-1" />
-              <p>In-app scheduling for inspections with automated reminders.</p>
+              <FaStar className="text-green-600 mt-1" />
+              <p>
+                Grade A & Organic cassava varieties available—choose what suits
+                your market.
+              </p>
             </div>
             <div className="flex gap-3 items-start">
-              <FaChartLine className="text-secondary mt-1" />
-              <p>Up-to-date pricing trends across Lagos Mainland & Island.</p>
+              <FaHandshake className="text-green-600 mt-1" />
+              <p>
+                Distributor partnerships with competitive wholesale rates &
+                volume discounts.
+              </p>
             </div>
             <div className="flex gap-3 items-start">
-              <FaInbox className="text-secondary mt-1" />
-              <p>Clean, user-friendly interface for browsing, saving, and sharing listings.</p>
+              <FaCheckCircle className="text-green-600 mt-1" />
+              <p>Fast turnaround—order today, ship within 24-48 hours.</p>
             </div>
             <div className="flex gap-3 items-start">
-              <FaUser className="text-secondary mt-1" />
-              <p>Detailed agent profiles—reviews, specialties, and recent closings.</p>
+              <FaTruck className="text-green-600 mt-1" />
+              <p>Flexible delivery options—nationwide shipping available.</p>
             </div>
             <div className="flex gap-3 items-start">
-              <FaMapMarkedAlt className="text-secondary mt-1" />
-              <p>Short-let/Airbnb management: setup, pricing, guest support, and cleaning.</p>
+              <FaGlobe className="text-green-600 mt-1" />
+              <p>
+                Sustainable farming practices—support local, quality
+                agriculture.
+              </p>
             </div>
           </div>
         </div>
@@ -98,9 +134,13 @@ const About = () => {
         {/* IMAGE - RIGHT SIDE */}
         <div className="flex-1">
           <div className="relative flex justify-end">
-            <img src={about2} alt="Modern Apartment Exterior" className="rounded-3xl" />
+            <img
+              src={about2}
+              alt="Premium Garri Production"
+              className="rounded-3xl"
+            />
             <span className="absolute top-8 right-8 bg-white px-3 py-1 rounded-full medium-14 shadow">
-              Victoria Island
+              Premium Quality
             </span>
           </div>
         </div>

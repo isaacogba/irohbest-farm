@@ -11,13 +11,13 @@ const Navbar = ({ containerStyles }) => {
         Home
       </NavLink>
       <NavLink
-        to={"/listing"}
+        to={"/products"}
         className={({ isActive }) => (isActive ? "active-link py-1" : "py-1")}
       >
-        Product
+        Products
       </NavLink>
       <NavLink
-        to={"mailto:speelixidealhome@gmail.com"}
+        to={"mailto:irohbest@gmail.com"}
         className={({ isActive }) => (isActive ? "active-link py-1" : "py-1")}
       >
         Contact

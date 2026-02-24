@@ -1,11 +1,11 @@
-import React from 'react';
-import { FaCheck, FaStar } from 'react-icons/fa';
-import user1 from '../assets/testimonials/user1.png';
-import user2 from '../assets/testimonials/user2.png';
-import property1 from '../assets/img1.png';
-import property2 from '../assets/img2.png';
-import property3 from '../assets/img3.png';
-import property4 from '../assets/img4.png';
+import React from "react";
+import { FaCheck, FaStar } from "react-icons/fa";
+import user1 from "../assets/testimonials/user1.png";
+import user2 from "../assets/testimonials/user2.png";
+import product1 from "../assets/img1.png";
+import product2 from "../assets/img2.png";
+import product3 from "../assets/img3.png";
+import product4 from "../assets/img4.png";
 
 const Testimonials = () => {
   return (
@@ -15,10 +15,10 @@ const Testimonials = () => {
         {/* LEFT SIDE */}
         <div className="flex flex-col justify-between gap-10">
           <div>
-            <h2 className="h2 text-[#008274]">What Our Clients Say</h2>
+            <h2 className="h2 text-green-600">What Our Customers Say</h2>
             <p className="text-gray-700 mt-2 max-w-sm">
-              Real feedback from clients who found their perfect homes with{' '}
-              <strong>SPEELIX IDEAL HOME (NIG) LTD</strong>.
+              Real feedback from satisfied customers who trust{" "}
+              <strong>IROHBEST Mill & Farm Ltd</strong> for quality products.
             </p>
           </div>
 
@@ -29,7 +29,7 @@ const Testimonials = () => {
               ))}
             </div>
             <div className="medium-14 text-gray-600">
-              Showing <b>1–2</b> of <b>2,000+</b> verified reviews
+              Showing <b>1–2</b> of <b>450+</b> verified reviews
             </div>
           </div>
         </div>
@@ -48,8 +48,8 @@ const Testimonials = () => {
                   className="rounded-full border border-slate-200"
                 />
                 <div>
-                  <h5 className="bold-14">isaac ogba</h5>
-                  <p className="text-gray-500 text-xs">Lekki Phase 1, Lagos</p>
+                  <h5 className="bold-14">Chukwu Emeka</h5>
+                  <p className="text-gray-500 text-xs">Port Harcourt, Rivers</p>
                 </div>
               </div>
               <div className="bg-[#008274] text-white rounded-full flexCenter gap-x-2 p-1 px-2 text-xs font-semibold">
@@ -66,24 +66,24 @@ const Testimonials = () => {
               ))}
             </div>
 
-            <h4 className="h4 mb-1">Smooth Process & Excellent Support</h4>
+            <h4 className="h4 mb-1">Premium Quality Garri</h4>
             <p className="text-gray-700 text-sm leading-relaxed">
-              “From the first call to handing over the keys, the Speelix team
-              was amazing! They handled inspections, paperwork, and even price
-              negotiations seamlessly. I couldn’t have asked for better service.”
+              "IROHBEST garri is the best I've ever tasted! Finely processed,
+              pure cassava, and so fresh. My family asks for it by name now.
+              Highly recommended!"
             </p>
 
             <div className="flex gap-x-1 mt-4">
               <img
-                src={property1}
-                alt="property"
+                src={product1}
+                alt="product"
                 height={44}
                 width={44}
                 className="rounded object-cover aspect-square"
               />
               <img
-                src={property2}
-                alt="property"
+                src={product2}
+                alt="product"
                 height={44}
                 width={44}
                 className="rounded object-cover aspect-square"
@@ -103,11 +103,11 @@ const Testimonials = () => {
                   className="rounded-full border border-slate-200"
                 />
                 <div>
-                  <h5 className="bold-14">Izabella Stress</h5>
-                  <p className="text-gray-500 text-xs">Victoria Island, Lagos</p>
+                  <h5 className="bold-14">Ngozi Okonkwo</h5>
+                  <p className="text-gray-500 text-xs">Lagos, Nigeria</p>
                 </div>
               </div>
-              <div className="bg-[#008274] text-white rounded-full flexCenter gap-x-2 p-1 px-2 text-xs font-semibold">
+              <div className="bg-green-600 text-white rounded-full flexCenter gap-x-2 p-1 px-2 text-xs font-semibold">
                 <FaCheck />
                 Verified
               </div>
@@ -121,24 +121,24 @@ const Testimonials = () => {
               ))}
             </div>
 
-            <h4 className="h4 mb-1">Modern Homes, Honest Agents</h4>
+            <h4 className="h4 mb-1">Best Bulk Supplier</h4>
             <p className="text-gray-700 text-sm leading-relaxed">
-              “I wanted a modern apartment close to work, and Speelix delivered
-              fast. The listings were exactly as described — clean, classy, and
-              transparent pricing. 100% recommend their Airbnb management too.”
+              "Running a food business became easy with IROHBEST. Their bulk
+              supplies are consistent, hygienic, and the WhatsApp ordering is so
+              convenient. Perfect wholesale partner!"
             </p>
 
             <div className="flex gap-x-1 mt-4">
               <img
-                src={property3}
-                alt="property"
+                src={product3}
+                alt="product"
                 height={44}
                 width={44}
                 className="rounded object-cover aspect-square"
               />
               <img
-                src={property4}
-                alt="property"
+                src={product4}
+                alt="product"
                 height={44}
                 width={44}
                 className="rounded object-cover aspect-square"

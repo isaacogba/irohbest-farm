@@ -7,27 +7,36 @@ import { FaStar } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className="max-padd-container bg-hero bg-cover bg-center bg-no-repeat relative overflow-hidden w-full min-h-[680px] py-20 md:py-28 flex items-center">
-      <div className="max-w-[45rem]">
-        <h1 className="h1 capitalize">
-          Discover Your Perfect Home <br /> with Speelix Ideal Homes
+    <section className="max-padd-container bg-hero bg-cover bg-center bg-no-repeat relative overflow-hidden w-full min-h-screen py-20 md:py-28 flex items-center">
+      <div className="absolute inset-0 bg-black/40" />
+      <div className="max-w-[45rem] z-10 pl-6 md:pl-12 lg:pl-20 text-white">
+        <h1 className="h1 capitalize text-white leading-tight text-4xl md:text-6xl lg:text-7xl font-bold max-w-4xl drop-shadow-lg">
+          Premium Cassava Products
+          <br /> from IROHBEST Mill & Farm
         </h1>
 
-        <p className="my-5 max-w-[33rem] text-gray-700">
-          From luxury apartments in Lekki to serene family homes across Nigeria,
-          <strong> SPEELIX IDEAL HOME (NIG) LTD </strong> makes property buying, selling, or renting
-          simple, transparent, and stress-free.
+        <p className="my-5 max-w-[33rem] text-white/90 drop-shadow-lg">
+          From fresh cassava roots to premium garri, cassava flour, and fufu
+          flour,
+          <strong> IROHBEST Mill & Farm Ltd </strong> delivers hygienic, quality
+          agricultural products direct from farm to your table.
         </p>
 
         {/* CTA */}
-        <div className="inline-flex items-center justify-center gap-4 bg-white rounded ring-1 ring-slate-900/5 mt-4">
+        <div className="inline-flex items-center justify-center gap-4 bg-white/90 rounded ring-1 ring-slate-900/5 mt-4">
           <div className="text-center regular-14 leading-tight pl-5 cursor-default">
             <p className="regular-14">
-              <span className="uppercase font-bold text-[#008274]">Limited Offer</span> – Get up to <strong>10% off</strong> select properties
+              <span className="uppercase font-bold text-green-600">
+                Farm Fresh
+              </span>{" "}
+              – Order bulk products at competitive prices
             </p>
           </div>
-          <Link to="/listing" className="btn-dark !rounded-tl-none !rounded-bl-none !rounded-lg">
-            Explore
+          <Link
+            to="/products"
+            className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg"
+          >
+            View Products
           </Link>
         </div>
 
@@ -36,25 +45,50 @@ const Hero = () => {
           <div className="flex items-center">
             {/* Overlapping avatars without absolute */}
             <div className="flex -space-x-3">
-              <img src={client1} alt="" className="h-12 w-12 rounded-full ring-2 ring-white object-cover shadow-sm" />
-              <img src={client2} alt="" className="h-12 w-12 rounded-full ring-2 ring-white object-cover shadow-sm" />
-              <img src={client3} alt="" className="h-12 w-12 rounded-full ring-2 ring-white object-cover shadow-sm" />
-              <img src={client1} alt="" className="h-12 w-12 rounded-full ring-2 ring-white object-cover shadow-sm" />
-              <img src={client2} alt="" className="h-12 w-12 rounded-full ring-2 ring-white object-cover shadow-sm" />
+              <img
+                src={client1}
+                alt=""
+                className="h-12 w-12 rounded-full ring-2 ring-white object-cover shadow-sm"
+              />
+              <img
+                src={client2}
+                alt=""
+                className="h-12 w-12 rounded-full ring-2 ring-white object-cover shadow-sm"
+              />
+              <img
+                src={client3}
+                alt=""
+                className="h-12 w-12 rounded-full ring-2 ring-white object-cover shadow-sm"
+              />
+              <img
+                src={client1}
+                alt=""
+                className="h-12 w-12 rounded-full ring-2 ring-white object-cover shadow-sm"
+              />
+              <img
+                src={client2}
+                alt=""
+                className="h-12 w-12 rounded-full ring-2 ring-white object-cover shadow-sm"
+              />
               <div className="h-12 w-12 rounded-full ring-2 ring-white bg-slate-500/70 text-white flex items-center justify-center text-xs font-semibold shadow-sm">
-                1k+
+                500+
               </div>
             </div>
-
-          
           </div>
 
           <div className="mt-4">
             <div className="flex gap-1 text-yellow-500 text-sm">
-              <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
             </div>
             <div className="bold-14 sm:bold-16 mt-1">
-              2k <span className="regular-14 sm:regular-16">Excellent Reviews</span>
+              450+{" "}
+              <span className="regular-14 sm:regular-16">
+                Customer Reviews on Product Quality
+              </span>
             </div>
           </div>
         </div>

@@ -16,33 +16,27 @@ import {
 // properties data
 export const PROPERTIES = [
   {
-    title: "Cassava Lot A - Dry Roots",
+    title: "palm Oil",
     image: img1,
-    category: "Cassava",
-    address: "Ikenne Farm, Ogun State",
+    category: "oil",
     country: "Nigeria",
-    state: "Ogun",
-    city: "Ikenne",
-    price: 85000,
     description:
-      "High-quality cassava roots suitable for garri production. Low moisture, cleaned and graded.",
+      "High-quality palm oil roots suitable for  production.  cleaned and graded.",
     details: {
-      weight_kg: 1000,
-      moisture_percent: 12,
       grade: "A",
     },
   },
   {
-    title: "Cassava Lot B - Wet Roots",
+    title: "Palm Oil",
     image: img2,
-    category: "Cassava",
+    category: "Palm Oil",
     address: "Aba Farmland, Abia State",
     country: "Nigeria",
     state: "Abia",
     city: "Aba",
     price: 65000,
     description:
-      "Freshly harvested cassava roots; ideal for processing into garri after drying.",
+      "Freshly harvested Palm Oil ; ideal for production.",
     details: {
       weight_kg: 1200,
       moisture_percent: 18,
@@ -57,7 +51,6 @@ export const PROPERTIES = [
     country: "Nigeria",
     state: "Benue",
     city: "Makurdi",
-    price: 120000,
     description:
       "Ready-to-sell fine-grade garri processed from tested cassava batches.",
     details: {
@@ -67,16 +60,11 @@ export const PROPERTIES = [
     },
   },
   {
-    title: "Cassava Lot C - Organic",
+    title: "palm Oil - Organic",
     image: img4,
-    category: "Cassava",
-    address: "Ondo Organic Farm",
-    country: "Nigeria",
-    state: "Ondo",
-    city: "Ondo",
-    price: 98000,
+    category: "Palm Oil",
     description:
-      "Organically grown cassava, no chemical fertilisers used. Suitable for premium garri.",
+      "no chemical fertilisers used. Suitable for premium Production.",
     details: {
       weight_kg: 800,
       moisture_percent: 11,
@@ -124,8 +112,9 @@ export const FOOTER_LINKS = [
 export const FOOTER_CONTACT_INFO = {
   title: "Contact Us",
   links: [
-    { label: "Contact Number", value: "08027928841 / 08073433054" },
-    { label: "Email Address", value: "speelixidealhome@gmail.com" },
+    { label: "Contact Number", value: "" },
+    { label: "Email Address", value: "irohbest@gmail.com" },
+
   ],
 };
 
