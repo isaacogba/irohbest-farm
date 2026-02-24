@@ -1,7 +1,7 @@
 import { toast } from "react-toastify";
 import { PROPERTIES } from "../constant/data";
 
-const STORAGE_KEY = "speedlix_properties";
+const STORAGE_KEY = "irohbest_products";
 const FAV_KEY = "speedlix_favourites";
 const BOOKINGS_KEY = "speedlix_bookings";
 

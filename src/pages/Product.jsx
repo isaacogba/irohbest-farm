@@ -7,7 +7,6 @@ import { FaLocationDot, FaStar } from "react-icons/fa6";
 import { GiWeight } from "react-icons/gi";
 import { TbDroplet } from "react-icons/tb";
 import { GiGrain } from "react-icons/gi";
-import Map from "../components/Map";
 import { Button } from "@mantine/core";
 
 const Product = () => {
@@ -60,9 +59,8 @@ const Product = () => {
               Nigeria
             </div>
           </p>
-          <div className="flexBetween pt-3">
+          <div className="pt-3">
             <h4 className="bold-20 line-clamp-1">{data?.title}</h4>
-            <div className="bold-20">₦{data?.price?.toLocaleString()}</div>
           </div>
           <div className="flexBetween py-1">
             <h5 className="bold-16 my-1 text-green-600">{data?.category}</h5>
@@ -88,11 +86,13 @@ const Product = () => {
           </div>
           <h4 className="h4 mt-3">Product Details</h4>
           <p className="mb-4">{data?.description}</p>
-          <div className="flexBetween pt-7">
+          <div className="pt-7">
             <Button
               onClick={() =>
                 window.open(
-                  `https://wa.me/2348027928841?text=Hi IROHBEST, I'm interested in ordering: ${data?.title}. Price: ₦${data?.price?.toLocaleString()}. Please share bulk supply options and delivery timeline.`,
+                  `https://wa.me/2348027928841?text=${encodeURIComponent(
+                    `Hi IROHBEST, I'm interested in ordering ${data?.title} (category: ${data?.category}, weight: ${data?.details?.weight_kg ?? "N/A"}kg, grade: ${data?.details?.grade ?? data?.category ?? "N/A"}). Please advise on bulk pricing and delivery.`,
+                  )}`,
                 )
               }
               variant="filled"
@@ -104,14 +104,7 @@ const Product = () => {
             </Button>
           </div>
         </div>
-        {/* RIGHT SIDE */}
-        <div className="flex-1">
-          <Map
-            address={data?.address}
-            city={data?.state}
-            country={data?.country}
-          />
-        </div>
+        {/* RIGHT SIDE removed (map not needed) */}
       </div>
     </section>
   );
