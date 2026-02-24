@@ -48,7 +48,9 @@ const Item = ({ product }) => {
               const weight = product.details?.weight_kg ?? "N/A";
               const grade = product.details?.grade ?? product.category ?? "N/A";
               const msg = `Hi IROHBEST, I'm interested in ordering ${product.title} (category: ${product.category}, weight: ${weight}kg, grade: ${grade}). Please advise on bulk pricing and delivery.`;
-              window.open(`https://wa.me/2348027928841?text=${encodeURIComponent(msg)}`);
+              window.open(
+                `https://wa.me/2348027928841?text=${encodeURIComponent(msg)}`,
+              );
             }}
             className="flex-1 bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-3 rounded-lg transition-colors duration-200 font-medium"
           >
